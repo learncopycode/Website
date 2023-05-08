@@ -403,19 +403,6 @@ audio:not([controls]) {
 progress {
   vertical-align: baseline;
 }
-video{display:block;position:relative;top:20px;width: 500px;margin: 0 auto;/* max-width: 500px; *//* left: 50%; */}
-
-@media only screen and (max-width: 536px) {
-  video{display:block;position:relative;width: 400px;margin: 0 auto;/* max-width: 500px; *//* left: 50%; */}
-}
-
-@media only screen and (max-width: 450px) {
-  video{display:block;position:relative;width: 315px;margin: 0 auto;/* max-width: 500px; *//* left: 50%; */}
-}
-
-@media only screen and (max-width: 359px) {
-  video{display:block;position:relative;width: 250px;margin: 0 auto;/* max-width: 500px; *//* left: 50%; */}
-}
 template,
 [hidden] {
   display: none;
