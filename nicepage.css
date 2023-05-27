@@ -12724,6 +12724,12 @@ section.u-image:not(.u-hover-box),
     flex: 1;
   }
 }
+.u-sidebar .u-form-group:not(:last-child) {
+  margin-bottom: 10px;
+}
+.u-sidebar .u-form-group > label {
+  margin-bottom: 0px;
+}
 .u-sidebar:first-child.u-indent-100 {
   margin-right: 100px;
 }
@@ -20965,11 +20971,15 @@ a.pswp__share--download:hover {
   position: relative;
 }
 .u-list-control {
+  display: flex;
+  position: relative;
+}
+.u-list-control.has-pagination.has-sorting {
   display: grid;
-  grid-template-columns: calc(33.3333%) calc(33.3333%) calc(33.3333%);
   grid-auto-flow: column;
   position: relative;
   align-items: center;
+  grid-template-columns: calc(33.3333%) calc(33.3333%) calc(33.3333%);
 }
 .u-pagination-center.u-sorting-center .u-list-control.has-pagination.has-sorting {
   grid-template-columns: 0;
@@ -42289,38 +42299,25 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-sheet-1 {
-  min-height: 293px;
+  min-height: 203px;
 }
 
 .u-footer .u-layout-wrap-1 {
   width: 1096px;
-  margin: 19px auto;
+  margin: 19px auto 60px;
 }
 
 .u-footer .u-layout-cell-1 {
-  min-height: 255px;
+  min-height: 114px;
 }
 
 .u-footer .u-container-layout-1 {
-  padding: 30px 0;
+  padding: 30px 0 24px;
 }
 
 .u-footer .u-text-1 {
-  font-size: 2.25rem;
-  margin: 38px auto 0;
-}
-
-.u-footer .u-social-icons-1 {
-  height: 31px;
-  min-height: 16px;
-  width: 134px;
-  min-width: 88px;
-  margin: 19px auto 0;
-}
-
-.u-footer .u-text-2 {
   width: 120px;
-  margin: 24px auto 0;
+  margin: 38px auto 0;
 }
 @media (max-width: 1199px) {
   .u-footer .u-sheet-1 {
@@ -42332,20 +42329,16 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-layout-cell-1 {
-    min-height: 219px;
+    min-height: 98px;
   }
 
-  .u-footer .u-social-icons-1 {
-    width: 134px;
-  }
-
-  .u-footer .u-text-2 {
+  .u-footer .u-text-1 {
     width: 120px;
   }
 }
 @media (max-width: 991px) {
   .u-footer .u-sheet-1 {
-    min-height: 138px;
+    min-height: 48px;
   }
 
   .u-footer .u-layout-wrap-1 {
@@ -42364,10 +42357,6 @@ a.u-link.u-text-hover-grey-90:hover {
 @media (max-width: 575px) {
   .u-footer .u-layout-wrap-1 {
     width: 340px;
-  }
-
-  .u-footer .u-text-1 {
-    font-size: 1.875rem;
   }
 }
 
